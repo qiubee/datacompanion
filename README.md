@@ -1,41 +1,22 @@
-# Project 1 @cmda-minor-web · 2019-2020
+# Het datahulpje
 
-## Zoek in de de collectie van de OBA
+Vaak heb je het niet door, maar op het internet wordt heel veel informatie verstuurd. Ook jij deelt informatie zonder dat je er misschien weet van hebt. Daarom wilt de OBA jou meer inzicht geven over de informatie die de OBA van jouw als lid bewaard. Wil jij weten wat er met jouw informatie gebeurt? Dan is het datahulpje er om jou te helpen.
 
-Het project vindt plaats bij de Centrale OBA. Maandagochtend is om 10.30 uur de kickoff (10:15 uur inloop), vrijdag zijn de presentaties van de resultaten. In een week bouwt iedere student een eigen prototype dat bezoekers kan helpen om items uit de OBA collectie te vinden. Technieken geleerd bij [CSS to the Rescue](https://github.com/cmda-minor-web/css-to-the-rescue-1819) en [Web App from Scratch](https://github.com/cmda-minor-web/web-app-from-scratch-1819) worden toegepast bij het bouwen van de de prototypes.
+Het datahulpje neemt je mee in de wereld van informatie. Leer hoe informatie wordt verzameld en hoe je informatie deelt. Leer hoe je informatie aan kan passen en wat je met informatie kan doen. Het datahulpje geeft je een overzicht van jouw informatie, zodat je zelf kunt bepalen wat je met de informatie wil doen.
 
-## Instructie voor het gebruiken van de API
+## Hoe werkt het datahulpje?
 
- [http://zoeken.oba.nl/api/v1](http://zoeken.oba.nl/api/v1)
- 
- Zie voorbeeld code in deze repository voor het aanspreken van de API.
+Kies eerst je jouw eigen datahulpje. Dan zal het datahulpje met een spel uitleg geven over hoe informatie wordt verzameld en verstuurd. Daarna laat het datahulpje jouw informatie zien en geeft het jouw de opdracht om de informatie veilig naar de OBA te sturen. Is de informatie veilig opgeslagen bij de OBA? Dan geeft het datahulpje met een spel uitleg hoe je de informatie kunt aanpassen. Daarna laat het datahulpje de informatie zien die is opgeslagen bij de OBA en geeft het jouw de opdracht om de informatie aan te passen, weg te halen of te verplaatsen. Weet je hoe je informatie kan versturen en kan aanpassen? Dan krijg je het overzicht van de informatie die de OBA van jouw heeft. Beslis zelf wat je met de informatie wil doen en met wie je het wil delen.
 
-## Programma
-We verzamelen maandagochtend om 10.15 op de 1e verdieping van de Centrale OBA, [Oosterdokskade 143](https://www.google.com/maps/place/OBA+library+of+Amsterdam/@52.3756983,4.9082087,15z/data=!4m2!3m1!1s0x0:0x6b97f693e6ecb494?ved=2ahUKEwioo6OrzubgAhWLNOwKHR6KDQgQ_BIwCnoECAYQCA).
+## Features
 
-## Werkwijze en Criteria
-### Werkwijze
-Full-time week werken aan (technisch) bewijzen van een concept-idee. Vrijdag is de pitch! Student laat zien dat hij/zij de vakken [CSS to the Rescue](https://github.com/cmda-minor-web/css-to-the-rescue-1819) en [Web App from Scratch](https://github.com/cmda-minor-web/web-app-from-scratch-1819) begrijpt en beheerst.
-
-Iedere dag zijn er coaches aanwezig voor coaching en feedback. We sluiten de dag af met een stand up, om de status door te spreken. Waar ben je mee bezig? Loop je ergens vast of heb je hulp nodig? Waar sta je?
-
-### Beoordeling
-Tijdens de beoordeling krijg je feedback op het resultaat en op je functioneren. De vakdocenten kijken naar je code en beoordelen In hoeverre je in het project laten zien dat je de bijhorende vakken beheerst en goed hebt toegepast. Lifely is geïnteresseerd in hoeverre je oplossing voldoet aan de eisen die zijzelf stellen aan hun producten. Misschien laat je wel wat zien waar ze zelf nog niet aan gedacht hebben?
-
-Het project telt als AVV mee met de Meesterproef.
-
-### Feedback over functioneren
-Je hebt een leergierig, gedreven en zelfredzame houding nodig om de minor te kunnen halen. Welke vaardigheden heb je laten zien? Onderzoekend vermogen? Creativiteit? Conceptueel? In hoeverre komen je houding en verworven vaardigheden overeen met wat een frontender in de praktijk nodig heeft?
-
-### Feedback over Web App from Scratch
-In het vak [Web App from Scratch](https://github.com/cmda-minor-web/web-app-from-scratch-1819) heb je geleerd een web app te maken zonder frameworks of onnodige libraries, dus zoveel mogelijk met native HTML, CSS & JavaScript. Het eindproduct is een modulair opgezet prototype voor een single page web app. Data wordt opgehaald uit een externe API, waar nodig gemanipuleerd en vervolgens getoond in de Web App. Je leert hoe structuur aan te brengen in je code en hoe je hiermee 'from scratch' een web app kan maken.
-
-### Feedback over CSS to the Rescue
-In het vak [CSS to the Rescue](https://github.com/cmda-minor-web/css-to-the-rescue-1819) heb je geleerd over de (brede) scope van CSS, over Progressive Enhancement, de _cascase_, _inheritance_ en _specifity_. Het is belangrijk om deze basisprincipes van CSS goed te begrijpen. Niet alleen op praktisch niveau, ook op experimenteel niveau. Zonder goed begrip van de basisprincipes is CSS magisch en weird. Met een goed begrip heb je CSS onder controle en kan je het laten doen wat jij wil. En dat is nodig om webpagina’s vorm te geven met attention to detail; webpagina’s waar mensen blij van worden.
-
-### Oplevering & criteria
-- Presentatie met je bevindingen bij de OBA. 
-- Github met je code en readme.
+* Eigen datahulpje kiezen.
+* Mini-games over informatie versturen en aanpassen.
+* Overzichtpagina van informatie (mini-games als inleiding).
+* Dynamische optie om informatie aan te passen.
+* Aanbevelingenspagina o.b.v. toegestane gedeelde data.
+* Ledenpagina met overeenkomende gelezen boeken van anderen (als toegestaan).
+* Chatfunctie (gesprek) per boek. (toegang als uitgeleend)
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
