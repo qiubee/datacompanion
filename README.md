@@ -6,17 +6,17 @@ Het datahulpje neemt je mee in de wereld van informatie. Leer hoe informatie wor
 
 ## Hoe werkt het datahulpje?
 
-Kies eerst je jouw eigen datahulpje. Dan zal het datahulpje met een spel uitleg geven over hoe informatie wordt verzameld en verstuurd. Daarna laat het datahulpje jouw informatie zien en geeft het jouw de opdracht om de informatie veilig naar de OBA te sturen. Is de informatie veilig opgeslagen bij de OBA? Dan geeft het datahulpje met een spel uitleg hoe je de informatie kunt aanpassen. Daarna laat het datahulpje de informatie zien die is opgeslagen bij de OBA en geeft het jouw de opdracht om de informatie aan te passen, weg te halen of te verplaatsen. Weet je hoe je informatie kan versturen en kan aanpassen? Dan krijg je het overzicht van de informatie die de OBA van jouw heeft. Beslis zelf wat je met de informatie wil doen en met wie je het wil delen.
+Kies eerst jouw eigen datahulpje. Daarna zal het datahulpje met een spel uitleg geven over hoe de OBA informatie verzameld en gebruikt. Dan laat het datahulpje jouw informatie zien en geeft jouw de opdracht om de informatie veilig naar de OBA te sturen. Is de informatie veilig opgeslagen bij de OBA? Dan geeft het datahulpje met een spel uitleg hoe je de informatie kunt aanpassen. Het datahulpje laat daarna de informatie zien die is opgeslagen bij de OBA en geeft het jouw de opdracht om de informatie aan te passen. Weet je hoe je informatie kan versturen en kan aanpassen? Dan krijg je het overzicht van de informatie die de OBA van jouw heeft en een overzicht van boeken die je bij de OBA kunt lenen. Beslis zelf wat de OBA met de informatie mag doen en of de informatie gedeeld mag worden met anderen.
 
 ## Features
 
 * Eigen datahulpje kiezen.
 * Mini-games over informatie versturen en aanpassen.
-* Overzichtpagina van informatie (mini-games als inleiding).
-* Dynamische optie om informatie aan te passen.
+* Informatiepagina (Boekenoverzicht & informatieoverzicht).
+  * Dynamische optie om informatie aan te passen.
 * Aanbevelingenspagina o.b.v. toegestane gedeelde data.
-* Ledenpagina met overeenkomende gelezen boeken van anderen (als toegestaan).
-* Chatfunctie (gesprek) per boek. (toegang als uitgeleend)
+* Overzichtspagina (Aanbevelingenspagina (3/4) links, Informatiepagina (1/4) rechts)
+* Chatfunctie (gesprek) per boek. (toegang als boek is geleend)
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
