@@ -1,0 +1,145 @@
+:root {
+    --main-font: "Lullaby";
+    --text-font: "Gribouille";
+    --main-color: #e1e8ff;
+    --sec-color: #fffd88;
+    /* create color pallette */
+}
+
+/* fonts */
+@font-face {
+    font-family: "Lullaby";
+    src: url("fonts/lullaby.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gribouille";
+    src: url("fonts/gribouille.ttf") format("truetype");
+}
+
+/* set margin & padding to default */
+body, ul, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* set decoration to default */
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -- Main -- */
+
+body {
+    font-family: var(--text-font);
+}
+
+h1 {
+    font-family: var(--main-font);
+    height: 0;
+    translate: 0 2vh;
+    font-size: 4em;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+}
+
+h1:first-letter {
+    font-size: 135%;
+    text-align: center;
+}
+
+h1.reposition {
+    translate: 0 calc(100vh / 15);
+    animation: hide 1s ease-in-out;
+    transition: translate 1s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+input[name="companion"] {
+    position: absolute;
+    top: -999em;
+}
+
+label[data-companion="companion"] {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    transition: width 1s ease, font-size 0.75s ease-in-out;
+}
+
+label[data-companion="companion"]:hover {
+    width: 75vw;
+    font-size: 500%;
+    cursor: pointer;
+}
+
+label[data-companion="companion"]:first-of-type {
+    background-color: var(--main-color);
+    color: #383A40;
+}
+
+label[data-companion="companion"]:last-of-type  {
+    background-color: var(--sec-color);
+    color: #403f22;
+}
+
+label[data-companion="companion"].selected {
+    font-size: 6em;
+    width: 100vw;
+}
+
+label[data-companion="companion"].selected span {
+    translate: 0 calc(100vh / 3);
+    transition: translate 1.25s ease-in-out;
+}
+
+label[data-companion="companion"].unselected {
+    width: 0;
+}
+
+label[data-companion="companion"].unselected span {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+label[data-companion="companion"].selected, label[data-companion="companion"].unselected {
+    pointer-events: none;
+}
+
+
+/* -- media queries -- */
+@media (min-width: 60em) {
+    label[data-companion="companion"] {
+        font-size: 5vw;
+    }
+    
+    label[data-companion="companion"]:hover {
+        font-size: 7.5vw;
+    }
+
+    label[data-companion="companion"].selected {
+        font-size: 10vw;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    } 50% {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
