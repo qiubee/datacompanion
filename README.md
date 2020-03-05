@@ -1,5 +1,7 @@
 # Het datahulpje
 
+![Preview datahulpje website](img/datahulpje.png)
+
 Vaak heb je het niet door, maar op het internet wordt heel veel informatie verstuurd. Ook jij deelt informatie zonder dat je er misschien weet van hebt. Daarom wilt de OBA jou meer inzicht geven over de informatie die de OBA van jouw als lid bewaard. Wil jij weten wat er met jouw informatie gebeurt? Dan is het datahulpje er om jou te helpen.
 
 Het datahulpje neemt je mee in de wereld van informatie. Leer hoe informatie wordt verzameld en hoe je informatie deelt. Leer hoe je informatie aan kan passen en wat je met informatie kan doen. Het datahulpje geeft je een overzicht van jouw informatie, zodat je zelf kunt bepalen wat je met de informatie wil doen.

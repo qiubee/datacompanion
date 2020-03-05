@@ -1,9 +1,11 @@
 :root {
     --main-font: "Lullaby";
     --text-font: "Gribouille";
-    --main-color: #e1e8ff;
-    --sec-color: #fffd88;
-    /* create color pallette */
+    --vivi-color: #e1e8ff;
+    --vivi-text-color: #383a40;
+    --momo-color: #fffd88;
+    --momo-text-color: #403f22;
+    /* color pallette */
 }
 
 /* fonts */
@@ -32,22 +34,22 @@ a {
     text-decoration: none;
 }
 
-/* -- Main -- */
+/* -- Choose companion -- */
 
 body {
     font-family: var(--text-font);
 }
 
-h1 {
+body > h1 {
     font-family: var(--main-font);
     height: 0;
     translate: 0 2vh;
     font-size: 4em;
     text-align: center;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0,0,0,0.65);
 }
 
-h1:first-letter {
+body > h1:first-letter {
     font-size: 135%;
     text-align: center;
 }
@@ -86,13 +88,13 @@ label[data-companion="companion"]:hover {
 }
 
 label[data-companion="companion"]:first-of-type {
-    background-color: var(--main-color);
-    color: #383A40;
+    background-color: var(--vivi-color);
+    color: var(--vivi-text-color);
 }
 
 label[data-companion="companion"]:last-of-type  {
-    background-color: var(--sec-color);
-    color: #403f22;
+    background-color: var(--momo-color);
+    color: var(--momo-text-color);
 }
 
 label[data-companion="companion"].selected {
@@ -118,6 +120,60 @@ label[data-companion="companion"].selected, label[data-companion="companion"].un
     pointer-events: none;
 }
 
+/* -- Overview -- */
+
+body[id="overview"] {
+    display: flex;
+}
+
+body div h1, body div h2:first-of-type {
+    font-family: var(--main-font);
+}
+
+body > div:first-of-type {
+    /* display: grid; */
+    background-color: white;
+    width: 70vw;
+    min-width: 35em;
+}
+
+body div:first-of-type h1 {
+    margin-left: 3em;
+}
+
+body > div:last-of-type {
+    position: fixed;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    min-width: 20em;
+}
+
+body div[data-companion="vivi"] {
+/*     border-left: solid 0.1em #a1caff; */
+    background-color: var(--vivi-color); 
+}
+
+body div[data-companion="momo"] {
+    background-color: var(--momo-color); 
+}
+
+body div:last-of-type h2 {
+    margin-top: 1em;
+    font-family: var(--text-font);
+    text-transform: uppercase;
+    font-size: 2em;
+    color: var(--vivi-text-color);
+    text-align: center;
+}
+
+body div:last-of-type h2:first-letter {
+    font-family: var(--main-font);
+}
+
+body div[data-companion="momo"] h2 {
+    color: var(--momo-text-color);
+}
 
 /* -- media queries -- */
 @media (min-width: 60em) {
@@ -134,6 +190,7 @@ label[data-companion="companion"].selected, label[data-companion="companion"].un
     }
 }
 
+/* animations */
 @keyframes hide {
     from {
         opacity: 1;

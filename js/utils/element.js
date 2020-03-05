@@ -24,7 +24,7 @@ export function deleteChildElements(parent, child, itemNumber = undefined) {
     }
 }
 
-function createElement(element) {
+export function createElement(element) {
     return document.createElement(element);
 }
 
