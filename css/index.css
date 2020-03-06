@@ -1,6 +1,7 @@
 :root {
     --main-font: "Lullaby";
     --text-font: "Gribouille";
+    --oba-font: "Avenir";
     --vivi-color: #e1e8ff;
     --vivi-text-color: #383a40;
     --momo-color: #fffd88;
@@ -9,6 +10,24 @@
 }
 
 /* fonts */
+@font-face {
+    font-family: "Avenir";
+    font-weight: 400;
+    src: url("fonts/avenir-book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Avenir";
+    font-weight: 600;
+    src: url("fonts/avenir-medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Avenir";
+    font-weight: 900;
+    src: url("fonts/avenir-heavy.otf") format("opentype");
+}
+
 @font-face {
     font-family: "Lullaby";
     src: url("fonts/lullaby.ttf") format("truetype");
@@ -34,8 +53,14 @@ a {
     text-decoration: none;
 }
 
-/* -- Choose companion -- */
+/* hide elements */
+input[name="companion"], body > div:last-of-type section li span:nth-child(2) {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
 
+/* -- Choose companion -- */
 body {
     font-family: var(--text-font);
 }
@@ -63,11 +88,6 @@ h1.reposition {
 form {
     display: flex;
     flex-direction: row;
-}
-
-input[name="companion"] {
-    position: absolute;
-    top: -999em;
 }
 
 label[data-companion="companion"] {
@@ -121,26 +141,78 @@ label[data-companion="companion"].selected, label[data-companion="companion"].un
 }
 
 /* -- Overview -- */
-
 body[id="overview"] {
     display: flex;
 }
 
-body div h1, body div h2:first-of-type {
-    font-family: var(--main-font);
-}
-
+/* Recommendations */
 body > div:first-of-type {
     /* display: grid; */
+    font-family: var(--oba-font);
     background-color: white;
-    width: 70vw;
+    /* width: 70vw; */
     min-width: 35em;
 }
 
-body div:first-of-type h1 {
-    margin-left: 3em;
+body div:first-of-type > img {
+    margin: 1em 0 0 1em;
+    width: 5em;
 }
 
+body div:first-of-type > div {
+    margin: 1.5em 0 1em 1em;
+}
+
+body div:first-of-type h1 {
+    font-family: var(--oba-font);
+    font-weight: 900;
+    font-size: 2em;
+}
+
+body div:first-of-type section {
+    margin: 2.5em 0 0 0.1em;
+}
+
+body div:first-of-type section div:first-of-type {
+    display: flex;
+}
+
+body div:first-of-type section div:first-of-type h2 {
+    font-size: 1.5em;
+}
+
+body div:first-of-type section div:first-of-type p {
+    margin-left: 3em;
+    font-size: 0.85em;
+    padding: 0.5em 0;
+}
+
+body div:first-of-type section > div:last-of-type {
+    display: flex;
+    margin: 1em 0;
+}
+
+body div:first-of-type section article {
+    margin-right: 2em;
+}
+
+body div:first-of-type section article img {
+    width: 8em;
+    height: 12.5em;
+    margin-right: 2.5em;
+}
+
+body div:first-of-type section article h3 {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+body div:first-of-type section article p {
+    font-weight: 400;
+    font-size: 0.85em;
+}
+
+/* Information display */
 body > div:last-of-type {
     position: fixed;
     right: 0;
@@ -158,8 +230,18 @@ body div[data-companion="momo"] {
     background-color: var(--momo-color); 
 }
 
-body div:last-of-type h2 {
-    margin-top: 1em;
+body div[data-companion="momo"] h2 {
+    color: var(--momo-text-color);
+}
+
+body > div:last-of-type > section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    font-family: var(--oba-font);
+}
+
+body > div:last-of-type > section h2 {
     font-family: var(--text-font);
     text-transform: uppercase;
     font-size: 2em;
@@ -167,12 +249,45 @@ body div:last-of-type h2 {
     text-align: center;
 }
 
-body div:last-of-type h2:first-letter {
+body > div:last-of-type h2:first-letter {
     font-family: var(--main-font);
 }
 
-body div[data-companion="momo"] h2 {
-    color: var(--momo-text-color);
+body > div:last-of-type > section ul {
+    margin: 2em 1em 0 1em;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-row-gap: 0.5em;
+}
+
+body > div:last-of-type > section li {
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+    grid-column: 2 span;
+}
+
+body > div:last-of-type > section li:nth-of-type(n+10) {
+    grid-column: 3 span;
+}
+
+body > div:last-of-type > section li span {
+    text-align: center;
+}
+
+body > div:last-of-type > section li span:first-of-type {
+    font-family: var(--main-font);
+    margin-bottom: 0.4em;
+}
+
+body > div:last-of-type > section li span:last-of-type {
+    font-weight: 600;
+}
+
+body > div:last-of-type > section svg {
+    margin: 4em auto 0 auto;
+    height: 100%;
+    width: 5em;
 }
 
 /* -- media queries -- */
