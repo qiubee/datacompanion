@@ -254,7 +254,7 @@ body > div:last-of-type h2:first-letter {
 }
 
 body > div:last-of-type > section ul {
-    margin: 2em 1em 0 1em;
+    margin: 2em 1vw 0 1vw;
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-row-gap: 0.5em;
@@ -262,7 +262,7 @@ body > div:last-of-type > section ul {
 
 body > div:last-of-type > section li {
     display: flex;
-    margin: 1em;
+    margin:  1vw 0.5vw;
     flex-direction: column;
     grid-column: 2 span;
 }
