@@ -82,7 +82,7 @@ body > h1:first-letter {
 h1.reposition {
     transform: translate(0 calc(100vh / 15));
     animation: hide 1s ease-in-out;
-    transition: translate 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 form {
@@ -124,7 +124,7 @@ label[data-companion="companion"].selected {
 
 label[data-companion="companion"].selected span {
     transform: translate(0 calc(100vh / 3));
-    transition: translate 1.25s ease-in-out;
+    transition: transform 1.25s ease-in-out;
 }
 
 label[data-companion="companion"].unselected {
